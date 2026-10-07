@@ -1,21 +1,17 @@
 public class SelectionSort {
 
-    // Selection Sort Ascending: cari nilai terkecil
     public void selectionSortAscending(int[] arr) {
         int n = arr.length;
 
         for (int i = 0; i < n - 1; i++) {
-            // anggap posisi saat ini adalah nilai terkecil
             int min_idx = i;
 
-            // telusuri bagian yang belum terurut
             for (int j = i + 1; j < n; j++) {
                 if (arr[j] < arr[min_idx]) {
                     min_idx = j;
                 }
             }
 
-            // pindahkan nilai terkecil ke posisi i
             int temp = arr[i];
             arr[i] = arr[min_idx];
             arr[min_idx] = temp;
@@ -24,12 +20,10 @@ public class SelectionSort {
         }
     }
 
-    // Selection Sort Descending: cari nilai terbesar
     public void selectionSortDescending(int[] arr) {
         int n = arr.length;
 
         for (int i = 0; i < n - 1; i++) {
-            // anggap posisi saat ini adalah nilai terbesar
             int max_idx = i;
 
             for (int j = i + 1; j < n; j++) {

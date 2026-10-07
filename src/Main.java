@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    // Salin array secara manual agar data asli tidak berubah
     static int[] salin(int[] sumber) {
         int[] hasil = new int[sumber.length];
         for (int i = 0; i < sumber.length; i++) {
@@ -16,7 +15,6 @@ public class Main {
         BubbleSort bubble = new BubbleSort();
         SelectionSort selection = new SelectionSort();
 
-        // Data jumlah likes postingan Z-App
         int[] likes = {120, 45, 300, 87, 15, 250, 66, 410, 5, 99};
 
         boolean jalan = true;

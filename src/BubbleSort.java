@@ -1,6 +1,5 @@
 public class BubbleSort {
 
-    // Bubble Sort Ascending (kecil -> besar)
     public void bubbleSortAscending(int[] arr) {
         int n = arr.length;
         boolean swapped;
@@ -10,7 +9,6 @@ public class BubbleSort {
             int jumlahSwap = 0;
 
             for (int j = 0; j < n - i - 1; j++) {
-                // tukar jika elemen kiri lebih besar
                 if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
@@ -22,7 +20,6 @@ public class BubbleSort {
 
             printPass(i + 1, arr, jumlahSwap);
 
-            // stop jika sudah urut
             if (!swapped) {
                 System.out.println("  -> Tidak ada pertukaran, data sudah terurut. Proses dihentikan.");
                 break;
@@ -30,7 +27,6 @@ public class BubbleSort {
         }
     }
 
-    // Bubble Sort Descending (besar -> kecil)
     public void bubbleSortDescending(int[] arr) {
         int n = arr.length;
         boolean swapped;
@@ -40,7 +36,6 @@ public class BubbleSort {
             int jumlahSwap = 0;
 
             for (int j = 0; j < n - i - 1; j++) {
-                // tukar jika elemen kiri lebih kecil
                 if (arr[j] < arr[j + 1]) {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
